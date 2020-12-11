@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Kindling</title>
+</head>
+<body>
+<div class="box">
+    <div class="form-box signin-box">
+        <form action="/login" method="POST" enctype="application/x-www-form-urlencoded">
+            <h2>Welcome to Kindling</h2>
+            <h4>Kindling Login</h4>
+            <input type="text" placeholder="Enter Username" value="" name ="username"/>
+            <input type="email" value="" Placeholder="Email" name="email"/>
+            <input type="password" placeholder="Enter Password" value="" name="password"/>
+            <button type="submit" value="Login">Login</button>
+        </form>
+        <br>
+
+    <div>
+            <form action="/register" method="POST" enctype="application/x-www-form-urlencoded">
+            <h4>User Registration</h4>
+            <p>Please provide your details to sign up for Kindling</p>
+            <input type="text" placeholder="Username" value="" style="margin-top: 2px" name="username"/>
+            <input type="email" placeholder="email" value=""  name= "email" required/>
+            <input type="date" placeholder="birthday" value=""  name= "birthday"/>
+            <input  type="password" placeholder="Password" value=""  name= "password"/>
+            <button type="submit" id="rgstr_btn">Sign up</button>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head> 
+<title>Kindling | Dating Web App</title>
+
+<h1 style="text-align: center;"> Kindling | Profile Frontpage</h1>
+<br>
+
+<h3>Possible Match:</h3>
+<p>Name: Linda Nielsen</p>
+<p>Age: 28<p>
+<p>Work: Intern at Kindling<p>
+<p>School: Copenhagen Business School<p>
+
+    
+
+</head>
+<div>
+    <form>
+    <button onclick="likeFunction()">Like</button>
+    <script>
+    function likeFunction() {
+        window.alert("You have liked this user")
+    }
+   </script>
+</form>
+<form>
+    <button onclick="dislikeFunction()">Dislike</button>
+    <script>
+        function dislikeFunction() {
+            window.alert("You have disliked this user")
+        }
+       </script>
+</form>
+<br>
+</div>
+<form action="/profile" method="GET"> 
+    <button>Edit Profile</button>
+    </form>
+<form action="/mainpage/logout" method="post"> 
+<button>Log Out</button>
+</form>
+
+<div>
+    <form action="/mainpage/delete/:id" method="POST" method="application/x-www-form-urlencoded">
+        <button type="submit" id="bob">Delete Your Account</button>
+        
+        </form>
+    
+    </div>
+
